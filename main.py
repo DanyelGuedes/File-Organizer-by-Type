@@ -1,7 +1,7 @@
 import os
 
 # Path where docs will be organazed
-path = fr"C:\Users\LENOVO\Documents\- Documentos - Separar"
+path = fr"C:\Users\LENOVO\Documents"
 
 # New folders for doc types
 jpg = fr"{path}\JPG"
