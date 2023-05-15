@@ -1,6 +1,6 @@
 import os
 
-# Path where docs will be organazed
+# Path where docs will be organized
 path = fr"C:\Users\LENOVO\Documents"
 
 # New folders for doc types
