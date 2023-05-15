@@ -12,7 +12,7 @@ powerpoint = fr"{path}\POWERPOINT"
 word = fr"{path}\WORD"
 
 # Move or criate the folder
-def MoveFile(file_extension):
+def move_file(file_extension):
     try:
         os.rename(fr"{path}\{name}", fr"{file_extension}\{name}")
     except:
@@ -24,30 +24,30 @@ with os.scandir(path) as files:
     for file in files:
         name = file.name
         if name.endswith(".jpg"):
-            MoveFile(jpg)
+            move_file(jpg)
 
         if name.endswith(".png"):
-            MoveFile(png)
+            move_file(png)
 
         if name.endswith(".xlsx"):
-            MoveFile(excel)
+            move_file(excel)
         if name.endswith(".xlsm"):
-            MoveFile(excel)
+            move_file(excel)
         if name.endswith(".csv"):
-            MoveFile(excel)
+            move_file(excel)
         if name.endswith(".xls"):
-            MoveFile(excel)
+            move_file(excel)
 
         if name.endswith(".pdf"):
-            MoveFile(pdf)
+            move_file(pdf)
 
         if name.endswith(".doc"):
-            MoveFile(word)
+            move_file(word)
         if name.endswith(".docx"):
-            MoveFile(word)
+            move_file(word)
         if name.endswith(".txt"):
-            MoveFile(word)
+            move_file(word)
 
 
         if name.endswith(".pptx"):
-            MoveFile(powerpoint)
+            move_file(powerpoint)
